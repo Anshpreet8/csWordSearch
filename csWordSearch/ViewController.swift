@@ -13,6 +13,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // add the words in the array
+        let words = ["swift", "kotlin", "objectivec", "variable", "java", "mobile"]
+        
+        // call the create grid function
+        let wordSearch = csWordSearch()
+        wordSearch.words = words
+        wordSearch.createGrid()
     }
 
 
